@@ -1,0 +1,18 @@
+INFO  | 09/27/2023 02:40:29 PM | File run_exp.py           | Line 26    | Writing log file to exp/GRAN\GRANMixtureBernoulli_grid_2023-Sep-27-14-40-28_22888\log_exp_22888.txt
+INFO  | 09/27/2023 02:40:29 PM | File run_exp.py           | Line 27    | Exp instance id = 22888
+INFO  | 09/27/2023 02:40:29 PM | File run_exp.py           | Line 28    | Exp comment = None
+INFO  | 09/27/2023 02:40:29 PM | File run_exp.py           | Line 29    | Config =
+INFO  | 09/27/2023 02:40:29 PM | File gran_runner.py       | Line 124   | Train/val/test = 80/20/20
+INFO  | 09/27/2023 02:40:29 PM | File gran_runner.py       | Line 137   | No Edges vs. Edges in training set = 111.70632737276479
+INFO  | 09/27/2023 02:40:47 PM | File gran_runner.py       | Line 315   | Average test time per mini-batch = 16.18807554244995
+ERROR | 09/27/2023 02:40:47 PM | File run_exp.py           | Line 42    | Traceback (most recent call last):
+  File "C:/Users/ran-zi.huang/Documents/GitHub/GRAN/run_exp.py", line 40, in main
+    runner.test()
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\runner\gran_runner.py", line 344, in test
+    draw_graph_list_separate(vis_graphs, fname=save_name[:-4], is_single=True, layout='spring')
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\utils\vis_helper.py", line 94, in draw_graph_list_separate
+    nx.draw_networkx_edges(G, pos, alpha=alpha, width=width)
+  File "C:\ProgramData\Anaconda3\envs\GRAN\lib\site-packages\networkx\drawing\nx_pylab.py", line 579, in draw_networkx_edges
+    if not cb.iterable(width):
+AttributeError: module 'matplotlib.cbook' has no attribute 'iterable'
+

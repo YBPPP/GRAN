@@ -302,6 +302,7 @@ class GRANData(object):
       subgraph_idx_base = np.array([0] +
                                    [bb['subgraph_count'] for bb in batch_pass])
       subgraph_idx_base = np.cumsum(subgraph_idx_base)
+      subgraph_idx_base = subgraph_idx_base.astype(np.int64)
 
       data['subgraph_idx_base'] = torch.from_numpy(
         subgraph_idx_base)

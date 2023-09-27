@@ -1,0 +1,19 @@
+INFO  | 09/26/2023 05:53:46 PM | File run_exp.py           | Line 26    | Writing log file to exp/GRAN\GRANMixtureBernoulli_grid_2023-Sep-26-17-53-45_17824\log_exp_17824.txt
+INFO  | 09/26/2023 05:53:46 PM | File run_exp.py           | Line 27    | Exp instance id = 17824
+INFO  | 09/26/2023 05:53:46 PM | File run_exp.py           | Line 28    | Exp comment = None
+INFO  | 09/26/2023 05:53:46 PM | File run_exp.py           | Line 29    | Config =
+INFO  | 09/26/2023 05:53:46 PM | File gran_runner.py       | Line 124   | Train/val/test = 80/20/20
+INFO  | 09/26/2023 05:53:46 PM | File gran_runner.py       | Line 137   | No Edges vs. Edges in training set = 111.70632737276479
+ERROR | 09/26/2023 05:53:52 PM | File run_exp.py           | Line 42    | Traceback (most recent call last):
+  File "C:/Users/ran-zi.huang/Documents/GitHub/GRAN/run_exp.py", line 38, in main
+    runner.train()
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\runner\gran_runner.py", line 225, in train
+    data = train_iterator.next()
+  File "C:\ProgramData\Anaconda3\envs\GRAN\lib\site-packages\torch\utils\data\dataloader.py", line 346, in __next__
+    data = self.dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\ProgramData\Anaconda3\envs\GRAN\lib\site-packages\torch\utils\data\_utils\fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\dataset\gran_data.py", line 307, in collate_fn
+    subgraph_idx_base)
+TypeError: can't convert np.ndarray of type numpy.intc. The only supported types are: float64, float32, float16, int64, int32, int16, int8, uint8, and bool.
+

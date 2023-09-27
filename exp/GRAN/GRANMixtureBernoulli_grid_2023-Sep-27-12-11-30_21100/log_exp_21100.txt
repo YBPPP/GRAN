@@ -1,0 +1,7 @@
+INFO  | 09/27/2023 12:11:31 PM | File run_exp.py           | Line 26    | Writing log file to exp/GRAN\GRANMixtureBernoulli_grid_2023-Sep-27-12-11-30_21100\log_exp_21100.txt
+INFO  | 09/27/2023 12:11:31 PM | File run_exp.py           | Line 27    | Exp instance id = 21100
+INFO  | 09/27/2023 12:11:31 PM | File run_exp.py           | Line 28    | Exp comment = None
+INFO  | 09/27/2023 12:11:31 PM | File run_exp.py           | Line 29    | Config =
+INFO  | 09/27/2023 12:11:31 PM | File gran_runner.py       | Line 124   | Train/val/test = 80/20/20
+INFO  | 09/27/2023 12:11:31 PM | File gran_runner.py       | Line 137   | No Edges vs. Edges in training set = 111.70632737276479
+INFO  | 09/27/2023 12:11:49 PM | File gran_runner.py       | Line 315   | Average test time per mini-batch = 16.441556692123413

@@ -1,0 +1,23 @@
+INFO  | 09/26/2023 06:16:02 PM | File run_exp.py           | Line 26    | Writing log file to exp/GRAN\GRANMixtureBernoulli_grid_2023-Sep-26-18-16-01_1188\log_exp_1188.txt
+INFO  | 09/26/2023 06:16:02 PM | File run_exp.py           | Line 27    | Exp instance id = 1188
+INFO  | 09/26/2023 06:16:02 PM | File run_exp.py           | Line 28    | Exp comment = None
+INFO  | 09/26/2023 06:16:02 PM | File run_exp.py           | Line 29    | Config =
+INFO  | 09/26/2023 06:16:02 PM | File gran_runner.py       | Line 124   | Train/val/test = 80/20/20
+INFO  | 09/26/2023 06:16:02 PM | File gran_runner.py       | Line 137   | No Edges vs. Edges in training set = 111.70632737276479
+ERROR | 09/26/2023 06:16:04 PM | File run_exp.py           | Line 42    | Traceback (most recent call last):
+  File "C:/Users/ran-zi.huang/Documents/GitHub/GRAN/run_exp.py", line 38, in main
+    runner.train()
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\runner\gran_runner.py", line 248, in train
+    train_loss = model(*batch_fwd).mean()
+  File "C:\ProgramData\Anaconda3\envs\GRAN\lib\site-packages\torch\nn\modules\module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\utils\data_parallel.py", line 104, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "C:\ProgramData\Anaconda3\envs\GRAN\lib\site-packages\torch\nn\modules\module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\model\gran_mixture_bernoulli.py", line 444, in forward
+    self.num_canonical_order)
+  File "C:\Users\ran-zi.huang\Documents\GitHub\GRAN\model\gran_mixture_bernoulli.py", line 494, in mixture_bernoulli_loss
+    const = torch.zeros(num_subgraph).to(label.device) # S
+TypeError: zeros(): argument 'size' (position 1) must be tuple of ints, not Tensor
+
